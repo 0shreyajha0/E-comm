@@ -16,7 +16,7 @@ function App() {
     <div className="App1">
       <Navbar></Navbar>
       <div>
-        <div className="">
+        <div className="heading">
           <h1>Featured Products</h1>
           <p>Explore and discover a variety of products</p>
         </div>

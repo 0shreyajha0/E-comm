@@ -1,3 +1,8 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
 .App {
   text-align: center;
 }
@@ -26,6 +31,25 @@
 
 .App-link {
   color: #61dafb;
+}
+
+.heading {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  margin-top: 10px;
+}
+
+.heading h1 {
+  font-size: 100px;
+  font-weight: 750;
+  margin: 0;
+  padding: 0;
+}
+.heading p {
+  margin-top: 10px;
 }
 
 @keyframes App-logo-spin {
