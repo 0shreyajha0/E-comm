@@ -3,12 +3,12 @@
   color: white;
   display: flex;
   justify-content: space-between;
-  height: 150px;
+  height: 100px;
 }
 .icon-image {
   width: 200px;
   height: 80px;
-  padding: 30px 10px 30px 30px;
+  padding: 10px 10px 30px 30px;
 }
 
 .main-menu {
@@ -16,7 +16,7 @@
   padding: 0;
   display: flex;
   padding-top: 23px;
-  font-size: 25px;
+  font-size: 20px;
 }
 
 .main-menu li {
@@ -52,17 +52,22 @@
 }
 .inp {
   display: flex;
+  padding: 0;
   padding-right: 10px;
+  margin: 0;
   justify-content: center;
   align-items: center;
-  /* display: block; */
 }
 
 .inp input {
   height: 35px;
-  background-color: black;
+  background-color: transparent;
+  padding-left: 10px;
   border: none;
-  color: white;
+  border-bottom: 1px solid #ccc;
+  outline: none;
+  color: #2f302c;
+  font-size: 16px;
 }
 
 .dropdown-content a:hover {

@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import "../styles/dyanimicmenu.css";
 import a from "../assests/Logo.png";
+import { CiSearch } from "react-icons/ci";
 
 const DynamicNavigationMenu = ({ menuItems }) => {
   const [visibleItems, setVisibleItems] = useState([]);
@@ -56,7 +57,8 @@ const DynamicNavigationMenu = ({ menuItems }) => {
           )}
         </ul>
         <div className="inp">
-          <input type="search" placeholder="Type Here"></input>
+          <CiSearch className="search-icon" />
+          <input type="search" placeholder="Search Something"></input>
         </div>
       </div>
     </div>
