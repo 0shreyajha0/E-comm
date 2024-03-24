@@ -1,0 +1,46 @@
+//font-family
+$font-primary: "Poppins", sans-serif;
+
+//colors
+$color-black: #111;
+$color-theme: #f07722;
+$color-white: #ffffff;
+$color-dull-white: #f8f8f8;
+$color-white-tarnsparent: #fffffff1;
+$color-shadow-light: #91909066;
+$color-shadow-dark: #2c2c2c66;
+$yellow-gradient-1: #f8ae47;
+$yellow-gradient-2: #ef7622;
+$blue-gradient-1: #041022;
+$blue-gradient-2: #222b3f;
+$dark-back: #000000cc;
+$light-back: #ffffff00;
+$color-border: #b3b3b375;
+$card-shaodw-1: #00000029;
+$card-shaodw-2: #0000003b;
+$blue-back-dark: #030f2198;
+$blue-back-light: #141e31;
+$white-back: #bfbfc094;
+$text-secondary: #222;
+
+$cta-gradient: linear-gradient(
+  120deg,
+  $blue-back-dark 20%,
+  $blue-back-light 100%,
+  $white-back 100%
+);
+
+// breakpoints
+$phone: 320px;
+$phone-max: 380px;
+$tablet: 768px;
+$small-desktop: 1025px;
+$large-desktop: 1440px;
+
+$breakpoints: (
+  phone: $phone,
+  phone-max: $phone-max,
+  tablet: $tablet,
+  small-desktop: $small-desktop,
+  large-desktop: $large-desktop,
+);

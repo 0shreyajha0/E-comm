@@ -1,0 +1,79 @@
+.button {
+  @include hover-effect;
+  text-transform: uppercase;
+  display: inline-block;
+  &--arrow {
+    &::after {
+      display: inline-block;
+      color: inherit;
+      content: "\e90f";
+      position: absolute;
+    }
+  }
+
+  &--white {
+    color: $color-white !important;
+  }
+  &--primary {
+    color: $color-theme !important;
+  }
+  &--lg {
+    @include font-face($size: 1.3rem, $weight: 500, $spacing: 0.06rem);
+    @include responsive(tablet) {
+      @include font-face($size: 1.6rem, $weight: 600);
+    }
+    @include responsive(small-desktop) {
+      @include font-face($size: 1.5rem, $weight: 500, $spacing: 0.1rem);
+    }
+    @include responsive(large-desktop) {
+      @include font-face($size: 1.5rem, $weight: 500, $spacing: 0.1rem);
+    }
+    &::after {
+      @include font-face(2rem);
+      margin-left: 0.6rem;
+      transform: translateY(-24%);
+      @include responsive(tablet) {
+        @include font-face(2.4rem);
+        margin-left: 0.8rem;
+      }
+      @include responsive(small-desktop) {
+        margin-left: 0.8rem;
+      }
+    }
+  }
+  &--sm {
+    font-size: 1.2rem;
+    letter-spacing: 0.03rem;
+    @include responsive(tablet) {
+      @include font-face($size: 1.2rem, $weight: 500, $spacing: 0.13rem);
+    }
+    &::after {
+      transform: translateY(-27%);
+      font-size: 1.8rem;
+      color: inherit;
+      margin-left: 1rem;
+    }
+  }
+  &--md {
+    @include font-face($size: 1.3rem, $weight: 500, $spacing: 0.03rem);
+    @include responsive(small-desktop) {
+      font-size: 1.7rem;
+      letter-spacing: 0.01rem;
+    }
+    @include responsive(large-desktop) {
+      @include font-face($size: 1.8rem, $weight: 500, $spacing: 0.01rem);
+    }
+    &::after {
+      @include font-face($size: 1.4rem, $weight: 500);
+      transform: translateY(-13%);
+      margin-left: 1.5rem;
+      @include responsive(small-desktop) {
+        @include font-face($size: 1.8rem, $weight: 500);
+        margin-left: 0.9rem;
+      }
+      @include responsive(large-desktop) {
+        font-weight: 700;
+      }
+    }
+  }
+}

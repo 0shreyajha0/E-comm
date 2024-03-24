@@ -1,0 +1,51 @@
+h1 {
+  @include font-face(3.2rem, 3.6rem, 900, 0.07rem);
+  @include responsive(tablet) {
+    @include font-face(4.8rem, 5.2rem, 900, 0.1rem);
+  }
+  @include responsive(small-desktop) {
+    @include font-face(5.2rem, 5.5rem, 900, 0.11rem);
+  }
+  @include responsive(large-desktop) {
+    @include font-face(5.6rem, 6rem, 900, 0.13rem);
+  }
+}
+
+h2 {
+  @include font-face(2.3rem, 2.6rem, 600, 0.02rem);
+  @include responsive(tablet) {
+    @include font-face(2.6rem, 2.7rem, 600, 0.037rem);
+  }
+  @include responsive(small-desktop) {
+    @include font-face(3rem, 3.4rem, 700, 0.037rem);
+  }
+  @include responsive(large-desktop) {
+    @include font-face(4rem, 4rem, 500);
+  }
+}
+
+h3 {
+  @include font-face(1.6rem, 1.875rem, 500, 0.008rem);
+  @include responsive(tablet) {
+    @include font-face(1.7rem, 2.1rem, 600, 0.002rem);
+  }
+  @include responsive(small-desktop) {
+    @include font-face(1.8rem, 2.3rem, 550, 0.09rem);
+  }
+  @include responsive(large-desktop) {
+    @include font-face(2.2rem, 2.8rem, 500, 0.09rem);
+  }
+}
+
+h4 {
+  @include font-face(1.5rem, 1.9rem, 500, 0.037rem);
+  @include responsive(tablet) {
+    @include font-face(1.6rem, 1.8rem, 600, 0.037rem);
+  }
+  @include responsive(small-desktop) {
+    @include font-face(1.6rem, 2rem, 500, 0.037rem);
+  }
+  @include responsive(large-desktop) {
+    @include font-face(2rem, 2.4rem, 500, 0.037rem);
+  }
+}

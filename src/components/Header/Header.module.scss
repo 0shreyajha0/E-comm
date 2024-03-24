@@ -1,0 +1,122 @@
+.headerContainer {
+  background-color: #2f302c;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100px;
+  padding: 0 60px;
+
+  .imageContainer {
+    width: 200px;
+    height: 50px;
+    margin-right: 12px;
+
+    .img {
+      width: 100%;
+      max-height: 100%;
+    }
+  }
+
+  .navBar {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    gap: 40px;
+    font-weight: 500;
+    font-size: 16px;
+
+    .navItem {
+      cursor: pointer;
+      text-transform: uppercase;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      &:hover {
+        color: #b5e0fd;
+        transition: 0.2s;
+      }
+    }
+
+    .navItemDropdown {
+      padding: 8px 14px;
+
+      &:hover {
+        color: #222222;
+        background-color: #ededed;
+      }
+    }
+  }
+
+  .dropdown {
+    position: relative;
+    display: inline-block;
+
+    .dropdownContent {
+      display: none;
+      right: 0px;
+      position: absolute;
+      background-color: #222222;
+      min-width: 180px;
+      box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+      z-index: 1;
+
+      a {
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+
+        &:hover {
+          background-color: #ddd;
+        }
+      }
+    }
+
+    &:hover {
+      .dropdownContent {
+        display: block;
+      }
+    }
+  }
+
+  .inputBox {
+    display: flex;
+    padding: 0;
+    padding-right: 10px;
+    margin: 0;
+    margin-left: 12px;
+    width: 300px;
+    align-items: center;
+    border-bottom: 1px solid #fff;
+
+    .searchIcon {
+      color: #fff;
+      font-size: 20px;
+      font-weight: 500;
+    }
+
+    input {
+      height: 35px;
+      background-color: transparent;
+      padding-left: 10px;
+      border: none;
+      outline: none;
+      color: #fff;
+      font-size: 16px;
+
+      &::placeholder {
+        color: #fff;
+      }
+    }
+  }
+
+  @media screen and (max-width: 850px) {
+    padding: 0 20px;
+
+    .inputBox {
+      display: none;
+    }
+  }
+}

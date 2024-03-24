@@ -1,0 +1,22 @@
+.heroContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 90px auto 30px;
+
+  .heading {
+    font-size: 5.8rem;
+    font-weight: 700;
+
+    @media screen and (max-width: 850px) {
+      font-size: 3.8rem;
+    }
+  }
+
+  .heroSubHeading {
+    font-size: 1.5rem;
+    font-weight: 400;
+    margin: 18px 0;
+  }
+}
