@@ -1,8 +1,14 @@
-#Marketing Landing Page
+# Marketing Landing Page
 
-This project ReactJS based landing page.
+This project ReactJS based landing page. Name of the website **E-comm**. 
 
-## Available Scripts
+<img width="1710" alt="Screenshot 2024-03-24 at 11 38 50 PM" src="https://github.com/0shreyajha0/marketing-landing-page/assets/95301435/20685724-f3e4-46e1-8595-45d341ffe619">
+
+
+Deployed link ⚡️ https://ecomm.shreyajha.in
+
+
+## Technologies Used 
 Technologies used in this project:
 - ReactJS
 - Scss
