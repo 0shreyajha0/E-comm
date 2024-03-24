@@ -1,4 +1,4 @@
-# E-COMM
+#Marketing Landing Page
 
 This project ReactJS based landing page.
 
